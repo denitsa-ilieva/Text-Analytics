@@ -1,0 +1,21 @@
+Stopwords: 
+	Advantages:
+		For many tasks (such as domain specific classification) stop words do not cary much important semantic information - because the output of the task is determined by other elements in the input (such as domain terminology)
+		
+		Deleting stopwords diminishes the input dimensionality. Machine Learning algorithms usually perform better if less informative features are removed.
+
+	Disadvantages:
+		Some stopwords may cary important semantic information, which for some tasks such as sentiment analysis can be crucial.
+	
+		Removing the stopwords from the corpus for text generation means inability to generate them afterwards which leads to unnatural and incoherent texts. 
+
+Stemming:
+	Advantage:
+		As with stopwords removal -> diminishing of input dimensionality (vocabulary size is made smaller)
+	
+		Fast and rule-based -> well defined output -> engineer knows what to expect
+
+	Disadvantages:
+		Loss of semantic and grammatical meaning-> introduction of sometimes unnecessary ambiguity
+
+		Some words cannot be mapped to their root-like forms, others are mapped to stemms that cary totaly different meaning, most are mapped to meaningLess stemms.
